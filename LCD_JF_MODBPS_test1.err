@@ -1,0 +1,45 @@
+Warning[2073] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 69 : null-terminated initializer string too long
+Warning[2054] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 75 : suspicious pointer conversion
+Warning[2066] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 75 : type qualifier mismatch in assignment
+Warning[2066] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 77 : type qualifier mismatch in assignment
+Warning[2054] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 86 : suspicious pointer conversion
+Warning[2066] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 86 : type qualifier mismatch in assignment
+Warning[2066] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 88 : type qualifier mismatch in assignment
+Warning[2054] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 91 : suspicious pointer conversion
+Warning[2066] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 91 : type qualifier mismatch in assignment
+Warning[2066] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 93 : type qualifier mismatch in assignment
+Warning[2054] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 96 : suspicious pointer conversion
+Warning[2066] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 96 : type qualifier mismatch in assignment
+Warning[2066] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 98 : type qualifier mismatch in assignment
+Warning[2054] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 101 : suspicious pointer conversion
+Warning[2066] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 101 : type qualifier mismatch in assignment
+Warning[2054] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 103 : suspicious pointer conversion
+Warning[2066] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 103 : type qualifier mismatch in assignment
+Warning[2066] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 105 : type qualifier mismatch in assignment
+Warning[2058] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 107 : call of function without prototype
+Warning[2066] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 162 : type qualifier mismatch in assignment
+Warning[2054] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 248 : suspicious pointer conversion
+Warning[2066] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 248 : type qualifier mismatch in assignment
+Warning[2054] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 249 : suspicious pointer conversion
+Warning[2066] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 250 : type qualifier mismatch in assignment
+Warning[2054] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 255 : suspicious pointer conversion
+Warning[2066] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 255 : type qualifier mismatch in assignment
+Warning[2066] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 257 : type qualifier mismatch in assignment
+Warning[2054] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 259 : suspicious pointer conversion
+Warning[2066] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 259 : type qualifier mismatch in assignment
+Warning[2066] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 261 : type qualifier mismatch in assignment
+Warning[2054] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 263 : suspicious pointer conversion
+Warning[2066] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 263 : type qualifier mismatch in assignment
+Warning[2066] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 265 : type qualifier mismatch in assignment
+Warning[2054] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 267 : suspicious pointer conversion
+Warning[2066] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 267 : type qualifier mismatch in assignment
+Warning[2066] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 269 : type qualifier mismatch in assignment
+Warning[2058] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 271 : call of function without prototype
+Warning[2054] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 298 : suspicious pointer conversion
+Warning[2054] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 298 : suspicious pointer conversion
+Warning[2066] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 329 : type qualifier mismatch in assignment
+Warning[2066] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 334 : type qualifier mismatch in assignment
+Warning[2066] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 335 : type qualifier mismatch in assignment
+Warning[2066] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 336 : type qualifier mismatch in assignment
+Warning[2054] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 342 : suspicious pointer conversion
+Warning[2054] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 342 : suspicious pointer conversion
