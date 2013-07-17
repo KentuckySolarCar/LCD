@@ -3,8 +3,9 @@
 #pragma config LVP = OFF
 #pragma config WDT = OFF
 #pragma config OSC = HS   
+#pragma config PWRT = OFF   // Power on delay 
 
-#include <p18F4580.h>
+#include <p18F4480.h>
 //#include <can2510.h>
 #include <spi.h>
 #include <stdlib.h>
@@ -13,6 +14,7 @@
 #include <stdio.h>
 #include <i2c.h>
 #include <string.h>
+#include <delays.h>
 #include "functions_Serial_JF.h"
 #include "LCD_JF_BPS.def"
 
@@ -43,9 +45,9 @@ void startCAN(void);
 
 void memcpy_reduced(void *output, void *input);
 
-void checkMessages(unsigned int* voltage, unsigned char* temp, int* current);
+void checkMessages(unsigned int* voltage, unsigned char* temp, long* current);
 
-void checkValues(unsigned int* voltage, unsigned char* temp, unsigned int*VoltageHigh, unsigned int* VoltageLow, unsigned int* VoltageAverage, unsigned char* TempHigh);
+void checkValues(unsigned int* voltage, unsigned int*VoltageHigh, unsigned int* VoltageLow, unsigned int* VoltageAverage);
 /*
 unsigned int findHighVoltage(unsigned int *VoltageArray, unsigned int *ArrayLength);
 unsigned int findLowVoltage(unsigned int *VoltageArray, unsigned int *ArrayLength);
@@ -53,62 +55,85 @@ unsigned int findAverageVoltage(unsigned int *VoltageArray, unsigned int *ArrayL
 void requestVoltages(unsigned int *VoltageArray, unsigned int *ArrayLength);//*/
 
 	#define INTMAX	65535
-	#define	COUNT	2
+	#define	COUNT	32
 	//variable used to test the display with no other boards connected
 	int testing = 1; // 1 means testing
+	unsigned char line[21] = "                    \0";
+    unsigned char  cool[20] =   "johnBroadbent       ";
+	unsigned char  notcool[20] ="garyBroadbent       ";
 	
+	 
+
 void main (void)
 {
 	unsigned int VoltageHigh;
 	unsigned int VoltageLow;
 	unsigned int VoltageAvg;
 	unsigned int voltageArray[COUNT];
-	unsigned char tempArray[COUNT];
+	unsigned char tempArray[COUNT]; 
 	unsigned char TempHigh;
-	int current = 0;                    
-	unsigned char line[21] = "                    \0";	//21 allows for use of termination bit when printing to serial port with no interference when printing to i2c port
-	openSerialPort();
+	long current = 0;                    
+//	unsigned char line[21] = "                    \0";	//21 allows for use of termination bit when printing to serial port with no interference when printing to i2c port
+	//openSerialPort();
+	
+    startCAN();
+
+	TRISB |= 0b00001000;//set the CAN input (RB3) to input
+	TRISC &= 0b11111011;//set the CAN output (RB2) to output
+	//ECANInitialize();																							    // defined ECANPoll.c
+  	CIOCONbits.ENDRHI =1;
 	starti2cPort();
-	startCAN();
-	
-	//*
-	sprintf(line, "    Starting Car    ");
+	Delay10KTCYx(0);
+	sprintf(line, "   Welcome to the   ");
 	writeLineToDisplay(line, 0);
-	printf("%s\n\r", line);
-	monitorStartup();//*/
-	
+	sprintf(line, "    UK Solar Car    ");
+	writeLineToDisplay(line, 1);
+	sprintf(line, "  GATO DEL SOL IV!  ");
+	writeLineToDisplay(line, 2);
+	sprintf(line, "                    ");
+	writeLineToDisplay(line, 3);
+	Delay10KTCYx(0); //delays 213.3 ms
+	Delay10KTCYx(0); //delays 213.3 ms
+	Delay10KTCYx(0); //delays 213.3 ms
+	Delay10KTCYx(0); //delays 213.3 ms
+	//Delay10KTCYx(0); //delays 213.3 ms	
+
+	//while(1)
+	//;
+	//*
+	//sprintf(line, "    Starting Car    ");
+	//writeLineToDisplay(line, 0);
+	//printf("%s\n\r", line);
+	//monitorStartup();//*/
+	clearDisplay();
 	while(1)
 	{//*
+		clearDisplay();
 		checkMessages(voltageArray, tempArray, &current);
 		//printf("Voltage[0] = %d\r\nVoltage[1] = %d\r\n", voltageArray[0], voltageArray[1]);
-		checkValues(voltageArray, tempArray, &VoltageHigh, &VoltageLow, &VoltageAvg, &TempHigh);
+		checkValues(voltageArray, &VoltageHigh, &VoltageLow, &VoltageAvg);
 		
 		sprintf(line, "Batt High: %01d.%02d     ", (int)(VoltageHigh/100), (int)(VoltageHigh%100));
+		//sprintf(line, "Batt High: %07d       ",VoltageHigh);
 		writeLineToDisplay(line, 0);
-		printf("%s\n\r", line);
-		
+		//printf("%s\n\r", line);
 		
 		sprintf(line, "Batt Avg: %01d.%02d      ", (int)(VoltageAvg/100), (int)(VoltageAvg%100));
 		writeLineToDisplay(line, 1);
-		printf("%s\n\r", line);
-		
+		//printf("%s\n\r", line);
 		
 		sprintf(line, "Batt Low: %01d.%02d      ", (int)(VoltageLow/100), (int)(VoltageLow%100));
 		writeLineToDisplay(line, 2);
-		printf("%s\n\r", line);
+		//printf("%s\n\r", line);
 		
 		if(current>=0) //if it is positive
-			sprintf(line, "Batt Current:  %02d.%02d", (int)(current/100), (int)(current%100));
+			sprintf(line, "Batt Current:  %02ld.%02ld", (long)(current/100), (long)(current%100));
 		else //if it is negative put the negative sign in front
-			sprintf(line, "Batt Current: -%02d.%02d", (int)(-current/100), (int)(-current%100));
-		writeLineToDisplay(line, 3);
-		printf("%s\n\r", line);
-		//*/
-		Delay10KTCYx(500);
-	}
-	
-	
-	
+			sprintf(line, "Batt Current: -%02d.%02d", (long)(-current/100), (long)(-current%100));
+
+	//	writeLineToDisplay(line, 3);
+		Delay10KTCYx(0);
+	}	
 	return;
 }	
 
@@ -117,7 +142,6 @@ void main (void)
 void writeLineToDisplay(unsigned char *line, unsigned int linenum)
 {
 unsigned int j;
-
 	SSPADD|=0x56;			// send address
 	i2c_busy(0x50);
 
@@ -128,11 +152,11 @@ unsigned int j;
 	if (linenum == 0)
 		SSPBUF = 0x00;
 	else if (linenum == 1)
-		SSPBUF = 0x40;
+		SSPBUF = 40; //0x40;
 	else if (linenum == 2)
-		SSPBUF = 0x14;
+		SSPBUF = 20;//0x14;
 	else if (linenum == 3)
-		SSPBUF = 0x54;
+		SSPBUF = 60; //0x54;
 	else return;
 	wait_sspif();
 	
@@ -170,8 +194,8 @@ void startSerialPort(void)
 void starti2cPort(void)
 {
 	TRISC = 0xFF;
+	TRISC &= 0b11111011;//set the CAN output (RB2) to output
 	SSPCON1 = 0b00111000;
-	//StartI2C1();
 	SSPADD|=0x56;			// set speed
 
 	i2c_busy(0x50);
@@ -268,26 +292,26 @@ void monitorStartup(void)
 		writeLineToDisplay(line, 3);
 		printf("\r%s\n", line);
 	
-	Delay10KTCYx(250);
+//	Delay10KTCYx(250);
 }
 
 void startCAN(void)
 {
 	//ensure proper TRIS settings
 	TRISB |= 0b00001000;//set the CAN input (RB3) to input
-	TRISC &= 0b11111011;//set the CAN output (RB2) to output
-			
+	TRISC |= 0b00000000;//set the CAN output (RB2) to output
+	TRISC &= 0b11111011;//set the CAN output (RB2) to output	
 	//actually start the CAN module
 	ECANInitialize();
 }
 
-void checkMessages(unsigned int* voltageArray, unsigned char* tempArray, int* current)
+void checkMessages(unsigned int* voltageArray, unsigned char* tempArray, long* current)
 {
 	unsigned long int i;
 	unsigned int voltage;
 	unsigned char temp;
 	unsigned int received_CAN_ID;
-	int newcurrent = 0;
+	long * newcurrent;
 	//can receiving variables
 	char messageReceived = 0;
 	char dataReceived[8]={0,0,0,0,0,0,0,0};	//maximum length that can be recieved
@@ -297,8 +321,15 @@ void checkMessages(unsigned int* voltageArray, unsigned char* tempArray, int* cu
 	//LATCbits.LATC3 = ~LATCbits.LATC3;
 	messageReceived = ECANReceiveMessage(&addressReceived, &dataReceived, &lengthReceived, &flagsReceived);
 
+	//while(!messageReceived)
+	//{
+	//	writeLineToDisplay(notcool, 1);
+	//}
 	while(messageReceived == 1)
 	{
+    	//writeLineToDisplay(cool, 2);
+		//Delay10KTCYx(0);
+
 		messageReceived = 0;
 		//if it has the reading bit set
 		//printf("CAN_ID = 0x%.3lx\r\n", addressReceived);
@@ -317,28 +348,17 @@ void checkMessages(unsigned int* voltageArray, unsigned char* tempArray, int* cu
 		}
 		else if(((MASK_BPS_MASTER | MASK_BPS_READING) == addressReceived)) //if current reading
 		{
-			if(lengthReceived == 2)
-			{
-				memcpy_reduced(&newcurrent, dataReceived);
-				//printf("BC=%d\n\r", current);
-				current[0] = newcurrent;
-			}
-		}
-		else if(((MASK_BPS_MASTER | MASK_BPS_READING | MASK_CBS) == addressReceived))	//if shutdown message
-		{
-			printf("Shutting Car Down\n\r");
 			if(lengthReceived == 4)
 			{
-				memcpy_reduced(&voltage, &(dataReceived[1]));
-				temp = dataReceived[3];
-				printf("Addr = %.2x\n\r", dataReceived[0]);
-				printf("Volt = %u\n\r", voltage);
-				printf("temp = %.2d\n\r", temp);
+				//memcpy_reduced(&newcurrent, dataReceived);
+				//printf("BC=%d\n\r", current);
+				newcurrent = (void*)dataReceived;
+				current = newcurrent;
 			}
 		}
 			
 		//check for any more messages
-		//for(i=0; i<1000; ++i);
+		for(i=0; i<1000; ++i);
 		messageReceived = ECANReceiveMessage(&addressReceived, &dataReceived, &lengthReceived, &flagsReceived);
 	}
 	return;
@@ -346,17 +366,17 @@ void checkMessages(unsigned int* voltageArray, unsigned char* tempArray, int* cu
 
 
 
-void checkValues(unsigned int* voltage, unsigned char* temp, unsigned int* VoltageHigh, unsigned int* VoltageLow, unsigned int* VoltageAverage, unsigned char* TempHigh)
+void checkValues(unsigned int* voltage, unsigned int* VoltageHigh, unsigned int* VoltageLow, unsigned int* VoltageAverage)
 {
 	unsigned int i = 0;
 	unsigned long int average = 0;
-	*VoltageAverage = 0; *VoltageHigh = 0; *VoltageLow = INTMAX; *TempHigh = 0;
+	*VoltageAverage = 0; *VoltageHigh = 0; *VoltageLow = INTMAX; //*TempHigh = 0;
 	for(i=0; i<COUNT; ++i)
 	{
 		//printf("voltage[i] = %d\r\n", voltage[i]);
 		if(voltage[i]>*VoltageHigh) *VoltageHigh = voltage[i];
 		if(voltage[i]<*VoltageLow) *VoltageLow = voltage[i];
-		if(temp[i]>*TempHigh)	*TempHigh = temp[i];
+		//if(temp[i]>*TempHigh)	*TempHigh = temp[i];
 		if(average != 0)
 			average = (average + voltage[i]) >> 1;//bitshift right by 1 is same as divide by 2
 		else average = voltage[i];
@@ -365,9 +385,9 @@ void checkValues(unsigned int* voltage, unsigned char* temp, unsigned int* Volta
 	*VoltageAverage = average;
 	
 	//set to the proper units for display on the screen (3 digits ?.??)
-	*VoltageHigh = (int)(*VoltageHigh / 100);
-	*VoltageLow = (int)(*VoltageLow / 100);
-	*VoltageAverage = (int)(*VoltageAverage / 100);
+	*VoltageHigh = (int)(*VoltageHigh/100);
+	*VoltageLow = (int)(*VoltageLow/100);
+	*VoltageAverage = (int)(*VoltageAverage/100);
 	return;
 }
 

@@ -1,45 +1,42 @@
-Warning[2073] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 69 : null-terminated initializer string too long
-Warning[2054] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 75 : suspicious pointer conversion
-Warning[2066] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 75 : type qualifier mismatch in assignment
-Warning[2066] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 77 : type qualifier mismatch in assignment
-Warning[2054] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 86 : suspicious pointer conversion
-Warning[2066] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 86 : type qualifier mismatch in assignment
-Warning[2066] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 88 : type qualifier mismatch in assignment
-Warning[2054] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 91 : suspicious pointer conversion
-Warning[2066] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 91 : type qualifier mismatch in assignment
-Warning[2066] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 93 : type qualifier mismatch in assignment
-Warning[2054] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 96 : suspicious pointer conversion
-Warning[2066] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 96 : type qualifier mismatch in assignment
-Warning[2066] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 98 : type qualifier mismatch in assignment
-Warning[2054] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 101 : suspicious pointer conversion
-Warning[2066] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 101 : type qualifier mismatch in assignment
-Warning[2054] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 103 : suspicious pointer conversion
-Warning[2066] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 103 : type qualifier mismatch in assignment
-Warning[2066] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 105 : type qualifier mismatch in assignment
-Warning[2058] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 107 : call of function without prototype
-Warning[2066] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 162 : type qualifier mismatch in assignment
-Warning[2054] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 248 : suspicious pointer conversion
-Warning[2066] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 248 : type qualifier mismatch in assignment
-Warning[2054] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 249 : suspicious pointer conversion
-Warning[2066] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 250 : type qualifier mismatch in assignment
-Warning[2054] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 255 : suspicious pointer conversion
-Warning[2066] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 255 : type qualifier mismatch in assignment
-Warning[2066] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 257 : type qualifier mismatch in assignment
-Warning[2054] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 259 : suspicious pointer conversion
-Warning[2066] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 259 : type qualifier mismatch in assignment
-Warning[2066] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 261 : type qualifier mismatch in assignment
-Warning[2054] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 263 : suspicious pointer conversion
-Warning[2066] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 263 : type qualifier mismatch in assignment
-Warning[2066] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 265 : type qualifier mismatch in assignment
-Warning[2054] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 267 : suspicious pointer conversion
-Warning[2066] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 267 : type qualifier mismatch in assignment
-Warning[2066] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 269 : type qualifier mismatch in assignment
-Warning[2058] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 271 : call of function without prototype
-Warning[2054] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 298 : suspicious pointer conversion
-Warning[2054] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 298 : suspicious pointer conversion
-Warning[2066] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 329 : type qualifier mismatch in assignment
-Warning[2066] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 334 : type qualifier mismatch in assignment
-Warning[2066] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 335 : type qualifier mismatch in assignment
-Warning[2066] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 336 : type qualifier mismatch in assignment
-Warning[2054] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 342 : suspicious pointer conversion
-Warning[2054] G:\SolarCar\BPS_JF-2012\LCD\LCD_JF_MODBPS_test1.c 342 : suspicious pointer conversion
+Warning[2073] C:\Documents and Settings\Solar Team\Desktop\Daniel\LCD\LCD_JF_MODBPS_test1.c 61 : null-terminated initializer string too long
+Warning[2073] C:\Documents and Settings\Solar Team\Desktop\Daniel\LCD\LCD_JF_MODBPS_test1.c 62 : null-terminated initializer string too long
+Warning[2073] C:\Documents and Settings\Solar Team\Desktop\Daniel\LCD\LCD_JF_MODBPS_test1.c 63 : null-terminated initializer string too long
+Warning[2054] C:\Documents and Settings\Solar Team\Desktop\Daniel\LCD\LCD_JF_MODBPS_test1.c 87 : suspicious pointer conversion
+Warning[2066] C:\Documents and Settings\Solar Team\Desktop\Daniel\LCD\LCD_JF_MODBPS_test1.c 87 : type qualifier mismatch in assignment
+Warning[2054] C:\Documents and Settings\Solar Team\Desktop\Daniel\LCD\LCD_JF_MODBPS_test1.c 89 : suspicious pointer conversion
+Warning[2066] C:\Documents and Settings\Solar Team\Desktop\Daniel\LCD\LCD_JF_MODBPS_test1.c 89 : type qualifier mismatch in assignment
+Warning[2054] C:\Documents and Settings\Solar Team\Desktop\Daniel\LCD\LCD_JF_MODBPS_test1.c 91 : suspicious pointer conversion
+Warning[2066] C:\Documents and Settings\Solar Team\Desktop\Daniel\LCD\LCD_JF_MODBPS_test1.c 91 : type qualifier mismatch in assignment
+Warning[2054] C:\Documents and Settings\Solar Team\Desktop\Daniel\LCD\LCD_JF_MODBPS_test1.c 93 : suspicious pointer conversion
+Warning[2066] C:\Documents and Settings\Solar Team\Desktop\Daniel\LCD\LCD_JF_MODBPS_test1.c 93 : type qualifier mismatch in assignment
+Warning[2054] C:\Documents and Settings\Solar Team\Desktop\Daniel\LCD\LCD_JF_MODBPS_test1.c 116 : suspicious pointer conversion
+Warning[2066] C:\Documents and Settings\Solar Team\Desktop\Daniel\LCD\LCD_JF_MODBPS_test1.c 116 : type qualifier mismatch in assignment
+Warning[2054] C:\Documents and Settings\Solar Team\Desktop\Daniel\LCD\LCD_JF_MODBPS_test1.c 121 : suspicious pointer conversion
+Warning[2066] C:\Documents and Settings\Solar Team\Desktop\Daniel\LCD\LCD_JF_MODBPS_test1.c 121 : type qualifier mismatch in assignment
+Warning[2054] C:\Documents and Settings\Solar Team\Desktop\Daniel\LCD\LCD_JF_MODBPS_test1.c 125 : suspicious pointer conversion
+Warning[2066] C:\Documents and Settings\Solar Team\Desktop\Daniel\LCD\LCD_JF_MODBPS_test1.c 125 : type qualifier mismatch in assignment
+Warning[2054] C:\Documents and Settings\Solar Team\Desktop\Daniel\LCD\LCD_JF_MODBPS_test1.c 130 : suspicious pointer conversion
+Warning[2066] C:\Documents and Settings\Solar Team\Desktop\Daniel\LCD\LCD_JF_MODBPS_test1.c 130 : type qualifier mismatch in assignment
+Warning[2054] C:\Documents and Settings\Solar Team\Desktop\Daniel\LCD\LCD_JF_MODBPS_test1.c 132 : suspicious pointer conversion
+Warning[2066] C:\Documents and Settings\Solar Team\Desktop\Daniel\LCD\LCD_JF_MODBPS_test1.c 132 : type qualifier mismatch in assignment
+Warning[2066] C:\Documents and Settings\Solar Team\Desktop\Daniel\LCD\LCD_JF_MODBPS_test1.c 186 : type qualifier mismatch in assignment
+Warning[2054] C:\Documents and Settings\Solar Team\Desktop\Daniel\LCD\LCD_JF_MODBPS_test1.c 272 : suspicious pointer conversion
+Warning[2066] C:\Documents and Settings\Solar Team\Desktop\Daniel\LCD\LCD_JF_MODBPS_test1.c 272 : type qualifier mismatch in assignment
+Warning[2054] C:\Documents and Settings\Solar Team\Desktop\Daniel\LCD\LCD_JF_MODBPS_test1.c 273 : suspicious pointer conversion
+Warning[2066] C:\Documents and Settings\Solar Team\Desktop\Daniel\LCD\LCD_JF_MODBPS_test1.c 274 : type qualifier mismatch in assignment
+Warning[2054] C:\Documents and Settings\Solar Team\Desktop\Daniel\LCD\LCD_JF_MODBPS_test1.c 279 : suspicious pointer conversion
+Warning[2066] C:\Documents and Settings\Solar Team\Desktop\Daniel\LCD\LCD_JF_MODBPS_test1.c 279 : type qualifier mismatch in assignment
+Warning[2066] C:\Documents and Settings\Solar Team\Desktop\Daniel\LCD\LCD_JF_MODBPS_test1.c 281 : type qualifier mismatch in assignment
+Warning[2054] C:\Documents and Settings\Solar Team\Desktop\Daniel\LCD\LCD_JF_MODBPS_test1.c 283 : suspicious pointer conversion
+Warning[2066] C:\Documents and Settings\Solar Team\Desktop\Daniel\LCD\LCD_JF_MODBPS_test1.c 283 : type qualifier mismatch in assignment
+Warning[2066] C:\Documents and Settings\Solar Team\Desktop\Daniel\LCD\LCD_JF_MODBPS_test1.c 285 : type qualifier mismatch in assignment
+Warning[2054] C:\Documents and Settings\Solar Team\Desktop\Daniel\LCD\LCD_JF_MODBPS_test1.c 287 : suspicious pointer conversion
+Warning[2066] C:\Documents and Settings\Solar Team\Desktop\Daniel\LCD\LCD_JF_MODBPS_test1.c 287 : type qualifier mismatch in assignment
+Warning[2066] C:\Documents and Settings\Solar Team\Desktop\Daniel\LCD\LCD_JF_MODBPS_test1.c 289 : type qualifier mismatch in assignment
+Warning[2054] C:\Documents and Settings\Solar Team\Desktop\Daniel\LCD\LCD_JF_MODBPS_test1.c 291 : suspicious pointer conversion
+Warning[2066] C:\Documents and Settings\Solar Team\Desktop\Daniel\LCD\LCD_JF_MODBPS_test1.c 291 : type qualifier mismatch in assignment
+Warning[2066] C:\Documents and Settings\Solar Team\Desktop\Daniel\LCD\LCD_JF_MODBPS_test1.c 293 : type qualifier mismatch in assignment
+Warning[2054] C:\Documents and Settings\Solar Team\Desktop\Daniel\LCD\LCD_JF_MODBPS_test1.c 322 : suspicious pointer conversion
+Warning[2054] C:\Documents and Settings\Solar Team\Desktop\Daniel\LCD\LCD_JF_MODBPS_test1.c 322 : suspicious pointer conversion
+Warning[2054] C:\Documents and Settings\Solar Team\Desktop\Daniel\LCD\LCD_JF_MODBPS_test1.c 362 : suspicious pointer conversion
+Warning[2054] C:\Documents and Settings\Solar Team\Desktop\Daniel\LCD\LCD_JF_MODBPS_test1.c 362 : suspicious pointer conversion
